@@ -64,7 +64,9 @@ app.use('/listing',listingRouter);
 app.use('/',reviewRouter);
 app.use('/',signupRouter);
 
-
+app.get('/',(req,res)=>{
+  res.redirect('/listing');
+})
  
  
 main()
