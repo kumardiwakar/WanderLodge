@@ -64,6 +64,7 @@ app.use('/listing',listingRouter);
 app.use('/',reviewRouter);
 app.use('/',signupRouter);
 
+//Home Route
 app.get('/',(req,res)=>{
   res.redirect('/listing');
 })
