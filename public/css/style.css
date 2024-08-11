@@ -1,0 +1,44 @@
+
+
+.fa-solid{
+    color: brown;
+    font-size: 2rem;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS of index.ejs */
+.card{
+    /* margin-left: 2rem; */
+    margin-bottom: 1rem;
+    border: none !important;
+}
+.card img{
+    border-radius: 1rem !important;
+}
+.card-body{
+    display: contents;
+}
+.card-container-index{
+    text-decoration: none;
+}
+
+/* Show page decoration */
+
+.show-btn{
+    display: flex;
+}
+.show-btn a{
+    margin-right: 10px;
+}
+.show-caontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rivew-card{
+    border: 1px solid black;
+}

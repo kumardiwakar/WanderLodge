@@ -1,0 +1,24 @@
+<% layout('/layout/boilerplate') %>
+<body>
+
+    <div class="container">
+        <form method="POST" action="/listing/<%=list._id%>?_method=PUT" novalidate class="needs-validation">
+            <div class="mb-3">
+                <h2>Edit a  Listing</h2>
+                <label for="title" class="form-label">title</label>
+              <input type="text" class="form-control" id="title"  name="title" value="<%=list.title%>" required>
+              <label for="description" class="form-label">Description</label>
+              <textarea name="description" id="description" rows="5" cols="20" class="form-control" required><%=list.description%></textarea>
+              <label for="image" class="form-label">Image link</label>
+              <input type="text" id="image" class="form-control" name="image" value="<%=list.image%>">
+              <label for="price" class="form-label">Price</label>
+              <input type="Number" id="price" name="price" value="<%=list.price%>" class="form-control" required>
+              <label for="location" class="form-label">Location</label>
+              <input type="text" id="location" name="location" value="<%=list.location%>" class="form-control" required>
+              <label for="country" class="form-label">Location</label>
+              <input type="text" id="country" name="country" value="<%=list.country%>"class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+    </div>
+</body>
